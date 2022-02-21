@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Mffv5ylLoJgkD7ld/sR/bR20wF+nrjvg1cMuRRM+VDNTCivnkf5PfvVF2iqtHbAzTwVw8NpVWcH7IeJqJiZEpg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Infrastructure\\StringManipulator.Infrastructure.File\\StringManipulator.Infrastructure.File.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

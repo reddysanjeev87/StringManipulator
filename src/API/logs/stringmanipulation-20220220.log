@@ -1,0 +1,271 @@
+2022-02-20 02:57:32.283 +06:00 [INF] Now listening on: https://localhost:7066
+2022-02-20 02:57:32.347 +06:00 [INF] Now listening on: http://localhost:5066
+2022-02-20 02:57:32.355 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-20 02:57:32.355 +06:00 [INF] Hosting environment: Development
+2022-02-20 02:57:32.355 +06:00 [INF] Content root path: D:\r-d\StringManipulator\src\API\StringManipulator.API\
+2022-02-20 02:57:33.535 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-20 02:57:34.047 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-20 02:57:34.048 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 521.2068ms
+2022-02-20 02:57:34.078 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 30.5787ms
+2022-02-20 02:57:34.327 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-20 02:57:34.545 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 217.9001ms
+2022-02-20 02:57:56.348 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 28
+2022-02-20 02:57:56.359 +06:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 02:57:56.386 +06:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 02:58:21.018 +06:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 24625.5299ms
+2022-02-20 02:58:21.020 +06:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 02:58:21.025 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: This is not valid arithmetic operator s.
+   at StringManipulator.Service.CalculationUtility.Precedence(Char operand) in D:\r-d\StringManipulator\src\Service\StringManipulator.Service\Utility\CalculationUtility.cs:line 23
+   at StringManipulator.Service.OperatorTraversal.Traverse(Int32 index, String expression, Stack`1 operators, Stack`1 operands) in D:\r-d\StringManipulator\src\Service\StringManipulator.Service\Traversel\OperatorTraversal.cs:line 18
+   at StringManipulator.Service.CalculationService.StringManipulator.Application.ICalculationService.Calculate(CalculationInputViewModel model) in D:\r-d\StringManipulator\src\Service\StringManipulator.Service\Service\CalculationService.cs:line 38
+   at StringManipulator.API.Controllers.CalculationController.Calculate(CalculationInputViewModel model) in D:\r-d\StringManipulator\src\API\StringManipulator.API\Controllers\CalculationController.cs:line 21
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-02-20 02:58:21.114 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 28 - 500 - text/plain;+charset=utf-8 24766.7808ms
+2022-02-20 02:59:29.919 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 25
+2022-02-20 02:59:29.926 +06:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 02:59:29.927 +06:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 02:59:29.943 +06:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 02:59:29.949 +06:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 22.4745ms
+2022-02-20 02:59:29.949 +06:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 02:59:29.950 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 25 - 200 - application/json;+charset=utf-8 33.0477ms
+2022-02-20 03:00:35.210 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Reverse - 0
+2022-02-20 03:00:35.212 +06:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-20 03:00:35.214 +06:00 [INF] Route matched with {action = "Reverse", controller = "Reverse"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Reverse() on controller StringManipulator.API.Controllers.ReverseController (StringManipulator.API).
+2022-02-20 03:00:35.230 +06:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.ReverseResponse'.
+2022-02-20 03:00:35.232 +06:00 [INF] Executed action StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API) in 17.9948ms
+2022-02-20 03:00:35.232 +06:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-20 03:00:35.232 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Reverse - 0 - 200 - application/json;+charset=utf-8 22.9760ms
+2022-02-20 13:18:57.886 +06:00 [INF] Now listening on: https://localhost:7066
+2022-02-20 13:18:57.915 +06:00 [INF] Now listening on: http://localhost:5066
+2022-02-20 13:18:57.918 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-20 13:18:57.919 +06:00 [INF] Hosting environment: Development
+2022-02-20 13:18:57.919 +06:00 [INF] Content root path: D:\r-d\StringManipulator\src\API\StringManipulator.API\
+2022-02-20 13:18:58.821 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-20 13:18:59.268 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-20 13:18:59.275 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 6.2716ms
+2022-02-20 13:18:59.276 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 460.1632ms
+2022-02-20 13:18:59.543 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-20 13:18:59.683 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 139.8983ms
+2022-02-20 13:19:57.548 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 27
+2022-02-20 13:19:57.555 +06:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 13:19:57.577 +06:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 13:19:57.655 +06:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 13:19:57.664 +06:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 83.3201ms
+2022-02-20 13:19:57.665 +06:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 13:19:57.665 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 27 - 200 - application/json;+charset=utf-8 117.5851ms
+2022-02-20 13:20:11.451 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 32
+2022-02-20 13:20:11.452 +06:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 13:20:11.452 +06:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 13:20:11.458 +06:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 13:20:11.458 +06:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 6.5654ms
+2022-02-20 13:20:11.459 +06:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 13:20:11.459 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 32 - 200 - application/json;+charset=utf-8 8.3086ms
+2022-02-20 13:33:28.824 +06:00 [INF] Now listening on: https://localhost:7066
+2022-02-20 13:33:28.864 +06:00 [INF] Now listening on: http://localhost:5066
+2022-02-20 13:33:28.869 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-20 13:33:28.870 +06:00 [INF] Hosting environment: Development
+2022-02-20 13:33:28.870 +06:00 [INF] Content root path: D:\StringManipulator\StringManipulator\src\API\StringManipulator.API\
+2022-02-20 13:33:29.572 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-20 13:33:30.087 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-20 13:33:30.092 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 526.2358ms
+2022-02-20 13:33:30.095 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 8.7021ms
+2022-02-20 13:33:30.289 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-20 13:33:30.441 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 151.4781ms
+2022-02-20 13:40:30.911 +06:00 [INF] Now listening on: https://localhost:7066
+2022-02-20 13:40:30.952 +06:00 [INF] Now listening on: http://localhost:5066
+2022-02-20 13:40:30.956 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-20 13:40:30.957 +06:00 [INF] Hosting environment: Development
+2022-02-20 13:40:30.957 +06:00 [INF] Content root path: D:\StringManipulator\StringManipulator\src\API\StringManipulator.API\
+2022-02-20 13:40:32.316 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-20 13:40:33.034 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-20 13:40:33.040 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 732.3306ms
+2022-02-20 13:40:33.057 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 22.9972ms
+2022-02-20 13:40:33.340 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-20 13:40:33.666 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 326.2682ms
+2022-02-20 13:40:42.713 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 28
+2022-02-20 13:40:42.718 +06:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 13:40:42.735 +06:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 13:40:42.807 +06:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 13:40:42.814 +06:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 74.0106ms
+2022-02-20 13:40:42.815 +06:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 13:40:42.815 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 28 - 200 - application/json;+charset=utf-8 102.2923ms
+2022-02-20 13:40:59.615 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 27
+2022-02-20 13:40:59.616 +06:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 13:40:59.616 +06:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 13:40:59.622 +06:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 13:40:59.622 +06:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 5.6526ms
+2022-02-20 13:40:59.622 +06:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 13:40:59.622 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 27 - 200 - application/json;+charset=utf-8 7.4003ms
+2022-02-20 13:42:43.814 +06:00 [INF] Now listening on: https://localhost:7066
+2022-02-20 13:42:43.850 +06:00 [INF] Now listening on: http://localhost:5066
+2022-02-20 13:42:43.854 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-20 13:42:43.854 +06:00 [INF] Hosting environment: Development
+2022-02-20 13:42:43.854 +06:00 [INF] Content root path: D:\StringManipulator\StringManipulator\src\API\StringManipulator.API\
+2022-02-20 13:42:44.404 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-20 13:42:44.624 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-20 13:42:44.626 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 224.4449ms
+2022-02-20 13:42:44.709 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 85.2931ms
+2022-02-20 13:42:44.792 +06:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-20 13:42:44.875 +06:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.9781ms
+2022-02-20 13:42:50.995 +06:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Reverse - 0
+2022-02-20 13:42:51.003 +06:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-20 13:42:51.011 +06:00 [INF] Route matched with {action = "Reverse", controller = "Reverse"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Reverse() on controller StringManipulator.API.Controllers.ReverseController (StringManipulator.API).
+2022-02-20 13:42:51.021 +06:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.ReverseResponse'.
+2022-02-20 13:42:51.034 +06:00 [INF] Executed action StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API) in 13.0637ms
+2022-02-20 13:42:51.035 +06:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-20 13:42:51.035 +06:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Reverse - 0 - 200 - application/json;+charset=utf-8 40.2210ms
+2022-02-20 03:45:38.491 -05:00 [INF] Now listening on: https://localhost:7066
+2022-02-20 03:45:38.524 -05:00 [INF] Now listening on: http://localhost:5066
+2022-02-20 03:45:38.529 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-20 03:45:38.529 -05:00 [INF] Hosting environment: Development
+2022-02-20 03:45:38.529 -05:00 [INF] Content root path: C:\Users\acer\Downloads\StringManipulator\StringManipulator\src\API\StringManipulator.API\
+2022-02-20 03:45:39.510 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger - -
+2022-02-20 03:45:39.666 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger - - - 301 0 - 160.8737ms
+2022-02-20 03:45:39.669 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-20 03:45:39.958 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 289.2081ms
+2022-02-20 03:45:39.961 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/swagger-ui-bundle.js - -
+2022-02-20 03:45:39.961 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/swagger-ui-standalone-preset.js - -
+2022-02-20 03:45:39.961 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/swagger-ui.css - -
+2022-02-20 03:45:39.981 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-02-20 03:45:39.986 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/swagger-ui.css - - - 200 143632 text/css 25.4031ms
+2022-02-20 03:45:39.994 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-02-20 03:45:39.996 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 35.4212ms
+2022-02-20 03:45:39.997 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-20 03:45:40.001 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 3.9379ms
+2022-02-20 03:45:40.003 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-02-20 03:45:40.004 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 42.8081ms
+2022-02-20 03:45:40.443 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-20 03:45:40.490 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/favicon-32x32.png - -
+2022-02-20 03:45:40.491 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2022-02-20 03:45:40.491 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/favicon-32x32.png - - - 200 628 image/png 0.6127ms
+2022-02-20 03:45:40.538 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.0576ms
+2022-02-20 03:46:59.083 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 28
+2022-02-20 03:46:59.095 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 03:46:59.122 -05:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 03:46:59.297 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 03:46:59.310 -05:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 180.711ms
+2022-02-20 03:46:59.312 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 03:46:59.312 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 28 - 200 - application/json;+charset=utf-8 228.7644ms
+2022-02-20 03:47:28.742 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 23
+2022-02-20 03:47:28.746 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 03:47:28.747 -05:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 03:47:28.751 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 03:47:28.751 -05:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 4.4814ms
+2022-02-20 03:47:28.751 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 03:47:28.752 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 23 - 200 - application/json;+charset=utf-8 12.2313ms
+2022-02-20 03:47:51.392 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 24
+2022-02-20 03:47:51.397 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 03:47:51.398 -05:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 03:47:51.401 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 03:47:51.401 -05:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 2.511ms
+2022-02-20 03:47:51.401 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 03:47:51.401 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 24 - 200 - application/json;+charset=utf-8 9.1487ms
+2022-02-20 03:47:54.407 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 24
+2022-02-20 03:47:54.407 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 03:47:54.407 -05:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 03:47:54.408 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 03:47:54.408 -05:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 0.7275ms
+2022-02-20 03:47:54.408 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 03:47:54.408 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 24 - 200 - application/json;+charset=utf-8 1.5789ms
+2022-02-20 03:48:23.688 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Reverse - 0
+2022-02-20 03:48:23.688 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-20 03:48:23.694 -05:00 [INF] Route matched with {action = "Reverse", controller = "Reverse"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Reverse() on controller StringManipulator.API.Controllers.ReverseController (StringManipulator.API).
+2022-02-20 03:48:23.705 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.ReverseResponse'.
+2022-02-20 03:48:23.706 -05:00 [INF] Executed action StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API) in 11.4925ms
+2022-02-20 03:48:23.706 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-20 03:48:23.706 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Reverse - 0 - 200 - application/json;+charset=utf-8 18.4873ms
+2022-02-20 14:06:30.304 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-20 14:06:30.373 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 69.6872ms
+2022-02-20 14:06:30.384 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-20 14:06:30.386 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 1.8726ms
+2022-02-20 14:06:31.574 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-20 14:06:31.577 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.8425ms
+2022-02-20 14:06:43.725 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Reverse - 0
+2022-02-20 14:06:43.725 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-20 14:06:43.725 -05:00 [INF] Route matched with {action = "Reverse", controller = "Reverse"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Reverse() on controller StringManipulator.API.Controllers.ReverseController (StringManipulator.API).
+2022-02-20 14:07:17.245 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.ReverseResponse'.
+2022-02-20 14:07:17.245 -05:00 [INF] Executed action StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API) in 33520.2025ms
+2022-02-20 14:07:17.245 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-20 14:07:17.245 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Reverse - 0 - 200 - application/json;+charset=utf-8 33520.6948ms
+2022-02-20 14:07:26.341 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Reverse - 0
+2022-02-20 14:07:26.344 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-20 14:07:26.345 -05:00 [INF] Route matched with {action = "Reverse", controller = "Reverse"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Reverse() on controller StringManipulator.API.Controllers.ReverseController (StringManipulator.API).
+2022-02-20 14:09:58.062 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.ReverseResponse'.
+2022-02-20 14:09:58.062 -05:00 [INF] Executed action StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API) in 151716.4211ms
+2022-02-20 14:09:58.062 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-20 14:09:58.062 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Reverse - 0 - 200 - application/json;+charset=utf-8 151721.4740ms
+2022-02-20 14:16:56.920 -05:00 [INF] Now listening on: https://localhost:7066
+2022-02-20 14:16:58.097 -05:00 [INF] Now listening on: http://localhost:5066
+2022-02-20 14:16:58.104 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-20 14:16:58.104 -05:00 [INF] Hosting environment: Development
+2022-02-20 14:16:58.105 -05:00 [INF] Content root path: C:\Users\acer\Downloads\StringManipulator\StringManipulator\src\API\StringManipulator.API\
+2022-02-20 14:17:07.109 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-20 14:17:13.862 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-20 14:17:13.955 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 60.6084ms
+2022-02-20 14:17:13.956 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 6987.0647ms
+2022-02-20 14:17:21.806 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-20 14:17:23.966 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2159.4179ms
+2022-02-20 14:18:05.873 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 25
+2022-02-20 14:18:05.935 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 14:18:06.251 -05:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 14:18:06.455 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 14:18:06.484 -05:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 215.1054ms
+2022-02-20 14:18:06.487 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 14:18:06.487 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 25 - 200 - application/json;+charset=utf-8 613.6570ms
+2022-02-20 14:19:09.693 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 27
+2022-02-20 14:19:09.788 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 14:19:09.790 -05:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 14:19:09.808 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 14:19:09.811 -05:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 19.7902ms
+2022-02-20 14:19:09.812 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 14:19:09.813 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 27 - 200 - application/json;+charset=utf-8 120.1535ms
+2022-02-20 14:45:10.263 -05:00 [INF] Now listening on: https://localhost:7066
+2022-02-20 14:45:10.300 -05:00 [INF] Now listening on: http://localhost:5066
+2022-02-20 14:45:10.303 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-20 14:45:10.304 -05:00 [INF] Hosting environment: Development
+2022-02-20 14:45:10.304 -05:00 [INF] Content root path: C:\Users\acer\Downloads\StringManipulator\StringManipulator\src\API\StringManipulator.API\
+2022-02-20 14:45:10.889 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-20 14:45:11.149 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-20 14:45:11.151 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 265.1619ms
+2022-02-20 14:45:11.155 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 5.0235ms
+2022-02-20 14:45:11.441 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-20 14:45:11.532 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 90.5141ms
+2022-02-20 14:46:11.418 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 29
+2022-02-20 14:46:11.431 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 14:46:11.454 -05:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 14:46:11.612 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 14:46:11.623 -05:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 162.5245ms
+2022-02-20 14:46:11.624 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 14:46:11.624 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 29 - 200 - application/json;+charset=utf-8 205.6511ms
+2022-02-20 14:46:23.439 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 29
+2022-02-20 14:46:23.445 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 14:46:23.445 -05:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 14:46:23.446 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 14:46:23.446 -05:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 1.5505ms
+2022-02-20 14:46:23.446 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 14:46:23.447 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 29 - 200 - application/json;+charset=utf-8 8.2066ms
+2022-02-20 14:47:28.913 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Calculation application/json 27
+2022-02-20 14:47:28.917 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 14:47:28.918 -05:00 [INF] Route matched with {action = "Calculate", controller = "Calculation"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Calculate(StringManipulator.Application.CalculationInputViewModel) on controller StringManipulator.API.Controllers.CalculationController (StringManipulator.API).
+2022-02-20 14:47:28.926 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.CalculationResponse'.
+2022-02-20 14:47:28.926 -05:00 [INF] Executed action StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API) in 2.6394ms
+2022-02-20 14:47:28.926 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.CalculationController.Calculate (StringManipulator.API)'
+2022-02-20 14:47:28.926 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Calculation application/json 27 - 200 - application/json;+charset=utf-8 14.6766ms

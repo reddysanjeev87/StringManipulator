@@ -1,0 +1,68 @@
+2022-02-21 01:31:51.957 -05:00 [INF] Now listening on: https://localhost:7066
+2022-02-21 01:31:51.990 -05:00 [INF] Now listening on: http://localhost:5066
+2022-02-21 01:31:51.994 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-21 01:31:51.994 -05:00 [INF] Hosting environment: Development
+2022-02-21 01:31:51.995 -05:00 [INF] Content root path: C:\Users\acer\OneDrive\Desktop\StringManipulator\src\API\StringManipulator.API\
+2022-02-21 01:31:52.752 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-21 01:31:53.237 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-21 01:31:53.240 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 493.9376ms
+2022-02-21 01:31:53.241 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 3.8840ms
+2022-02-21 01:31:53.567 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-21 01:31:53.627 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 59.6255ms
+2022-02-21 01:32:04.409 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Reverse - 0
+2022-02-21 01:32:04.414 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-21 01:32:04.424 -05:00 [INF] Route matched with {action = "Reverse", controller = "Reverse"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Reverse() on controller StringManipulator.API.Controllers.ReverseController (StringManipulator.API).
+2022-02-21 01:34:22.687 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.ReverseResponse'.
+2022-02-21 01:34:22.694 -05:00 [INF] Executed action StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API) in 138266.1238ms
+2022-02-21 01:34:22.695 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-21 01:34:22.695 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Reverse - 0 - 200 - application/json;+charset=utf-8 138285.9796ms
+2022-02-21 02:27:20.033 -05:00 [INF] Now listening on: https://localhost:7066
+2022-02-21 02:27:20.060 -05:00 [INF] Now listening on: http://localhost:5066
+2022-02-21 02:27:20.063 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-21 02:27:20.063 -05:00 [INF] Hosting environment: Development
+2022-02-21 02:27:20.063 -05:00 [INF] Content root path: C:\Users\acer\OneDrive\Desktop\StringManipulator\src\API\StringManipulator.API\
+2022-02-21 02:27:20.847 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-21 02:27:21.122 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-21 02:27:21.123 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 278.7425ms
+2022-02-21 02:27:21.134 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 11.9537ms
+2022-02-21 02:27:21.530 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-21 02:27:21.612 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 81.7653ms
+2022-02-21 02:27:27.770 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Reverse - 0
+2022-02-21 02:27:27.779 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-21 02:27:27.792 -05:00 [INF] Route matched with {action = "Reverse", controller = "Reverse"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Reverse() on controller StringManipulator.API.Controllers.ReverseController (StringManipulator.API).
+2022-02-21 03:36:48.471 -05:00 [INF] Now listening on: https://localhost:7066
+2022-02-21 03:36:48.527 -05:00 [INF] Now listening on: http://localhost:5066
+2022-02-21 03:36:48.540 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-21 03:36:48.540 -05:00 [INF] Hosting environment: Development
+2022-02-21 03:36:48.541 -05:00 [INF] Content root path: C:\Users\acer\OneDrive\Desktop\StringManipulator\src\API\StringManipulator.API\
+2022-02-21 03:36:49.686 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-21 03:36:49.915 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 237.1784ms
+2022-02-21 03:36:49.936 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-21 03:36:49.938 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 2.6984ms
+2022-02-21 03:36:50.536 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-21 03:36:50.607 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.8219ms
+2022-02-21 03:37:04.424 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Reverse - 0
+2022-02-21 03:37:04.432 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-21 03:37:04.445 -05:00 [INF] Route matched with {action = "Reverse", controller = "Reverse"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Reverse() on controller StringManipulator.API.Controllers.ReverseController (StringManipulator.API).
+2022-02-21 03:37:13.022 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.ReverseResponse'.
+2022-02-21 03:37:13.030 -05:00 [INF] Executed action StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API) in 8579.5747ms
+2022-02-21 03:37:13.031 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-21 03:37:13.031 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Reverse - 0 - 200 - application/json;+charset=utf-8 8607.6439ms
+2022-02-21 03:38:20.315 -05:00 [INF] Now listening on: https://localhost:7066
+2022-02-21 03:38:20.344 -05:00 [INF] Now listening on: http://localhost:5066
+2022-02-21 03:38:20.348 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-02-21 03:38:20.348 -05:00 [INF] Hosting environment: Development
+2022-02-21 03:38:20.348 -05:00 [INF] Content root path: C:\Users\acer\OneDrive\Desktop\StringManipulator\src\API\StringManipulator.API\
+2022-02-21 03:38:21.272 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/index.html - -
+2022-02-21 03:38:21.615 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - -
+2022-02-21 03:38:21.617 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/index.html - - - 200 - text/html;charset=utf-8 348.5851ms
+2022-02-21 03:38:21.625 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/_framework/aspnetcore-browser-refresh.js - - - 200 11955 application/javascript;+charset=utf-8 10.2259ms
+2022-02-21 03:38:21.990 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - -
+2022-02-21 03:38:22.049 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7066/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 58.6159ms
+2022-02-21 03:38:38.001 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7066/api/Reverse - 0
+2022-02-21 03:38:38.010 -05:00 [INF] Executing endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-21 03:38:38.021 -05:00 [INF] Route matched with {action = "Reverse", controller = "Reverse"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Reverse() on controller StringManipulator.API.Controllers.ReverseController (StringManipulator.API).
+2022-02-21 03:38:42.496 -05:00 [INF] Executing OkObjectResult, writing value of type 'StringManipulator.Application.ReverseResponse'.
+2022-02-21 03:38:42.505 -05:00 [INF] Executed action StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API) in 4477.2826ms
+2022-02-21 03:38:42.505 -05:00 [INF] Executed endpoint 'StringManipulator.API.Controllers.ReverseController.Reverse (StringManipulator.API)'
+2022-02-21 03:38:42.506 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7066/api/Reverse - 0 - 200 - application/json;+charset=utf-8 4504.2587ms

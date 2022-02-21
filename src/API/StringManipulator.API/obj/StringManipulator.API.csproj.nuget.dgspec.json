@@ -1,0 +1,280 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\API\\StringManipulator.API\\StringManipulator.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\API\\StringManipulator.API\\StringManipulator.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\API\\StringManipulator.API\\StringManipulator.API.csproj",
+        "projectName": "StringManipulator.API",
+        "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\API\\StringManipulator.API\\StringManipulator.API.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\API\\StringManipulator.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Infrastructure\\StringManipulator.Infrastructure.File\\StringManipulator.Infrastructure.File.csproj": {
+                "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Infrastructure\\StringManipulator.Infrastructure.File\\StringManipulator.Infrastructure.File.csproj"
+              },
+              "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Service\\StringManipulator.Service\\StringManipulator.Service.csproj": {
+                "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Service\\StringManipulator.Service\\StringManipulator.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Core\\StringManipulator.Application\\StringManipulator.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Core\\StringManipulator.Application\\StringManipulator.Application.csproj",
+        "projectName": "StringManipulator.Application",
+        "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Core\\StringManipulator.Application\\StringManipulator.Application.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Core\\StringManipulator.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Infrastructure\\StringManipulator.Infrastructure.File\\StringManipulator.Infrastructure.File.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Infrastructure\\StringManipulator.Infrastructure.File\\StringManipulator.Infrastructure.File.csproj",
+        "projectName": "StringManipulator.Infrastructure.File",
+        "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Infrastructure\\StringManipulator.Infrastructure.File\\StringManipulator.Infrastructure.File.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Infrastructure\\StringManipulator.Infrastructure.File\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Core\\StringManipulator.Application\\StringManipulator.Application.csproj": {
+                "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Core\\StringManipulator.Application\\StringManipulator.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Service\\StringManipulator.Service\\StringManipulator.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Service\\StringManipulator.Service\\StringManipulator.Service.csproj",
+        "projectName": "StringManipulator.Service",
+        "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Service\\StringManipulator.Service\\StringManipulator.Service.csproj",
+        "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Service\\StringManipulator.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Core\\StringManipulator.Application\\StringManipulator.Application.csproj": {
+                "projectPath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Core\\StringManipulator.Application\\StringManipulator.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.6, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

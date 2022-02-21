@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "T2sMWh+70EkBhIHhfWuDmv9IWGNeJqLx7JukVcWrtTcg+H0MZ+Xb3BCLeZqSf4nTUB6yJOZawF67IgqzWHraYg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\acer\\OneDrive\\Desktop\\StringManipulator\\src\\Service\\StringManipulator.Service\\StringManipulator.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\acer\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
